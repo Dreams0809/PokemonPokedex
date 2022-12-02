@@ -8,7 +8,7 @@ function getPokemon(){
   fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
   .then(res => res.json()) // parse response as JSON
   .then(data => {
-    console.log(data)
+    
         
     document.querySelector('h2').innerText = data.name.toUpperCase()
     document.querySelector('img').src = data.sprites.other["official-artwork"].front_default
