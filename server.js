@@ -1,6 +1,8 @@
 ﻿const express = require('express')
 const app = express()
 const PORT = 3000
+require('dotenv').config()
+
 
 
 app.set('view engine', 'ejs')
@@ -11,7 +13,7 @@ app.use('/public', express.static('public'));
 
 
 app.get('/',async (request, response)=>{
-    response.sendFile(__dirname + '/html/index.html')
+    response.ren(__dirname + '/html/index.html')
 })
 
 
