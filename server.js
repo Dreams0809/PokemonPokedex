@@ -13,7 +13,7 @@ app.use('/public', express.static('public'));
 
 
 app.get('/',async (request, response)=>{
-    response.ren(__dirname + '/html/index.html')
+    response.render('index.ejs')
 })
 
 
