@@ -102,6 +102,8 @@ function getPokemon(){
 
 }
 
+console.log('Choose your Pokemon')
+
 
 
 
