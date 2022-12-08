@@ -2,7 +2,7 @@
 
 function getTeam1(){
 
-    const pokemonTeam1 = document.querySelector('h1').value.toLowerCase()
+    const pokemonTeam1 = document.querySelector('#pokemonTeam1').value.toLowerCase()
 
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonTeam1}`)
     .then(res => res.json()) // parse response as JSON
