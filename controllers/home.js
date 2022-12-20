@@ -6,6 +6,6 @@
 
 module.exports = {
     getIndex: (require,response)=>{
-        response.render('index.ejs')
+        response.render('landingPage.ejs')
     }
 }
