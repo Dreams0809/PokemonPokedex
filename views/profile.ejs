@@ -1,0 +1,52 @@
+﻿<link rel="stylesheet" href="public/css/profile.css">
+
+
+
+
+<nav>
+    <ul><a href="/home"> Home</a></ul>
+
+</nav>
+
+
+<div class="container">
+  <div class="row mt-5">
+      <div class="col-6">
+          <div>
+              <p><strong>User Name</strong>: <%= user.userName %></p>
+              <p><strong>Email</strong>: <%= user.email %></p>
+              <a href="/logout" class="col-3 btn btn-primary">Logout</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<h1> Welcome <%= user.userName %> <h1>
+
+
+<h1> My Pokemon Team </h1>
+
+<div class="list">
+    <ul class="list">
+        <% for (let i =0; i < pokemon.length; i++){ %>
+            <li class="list">
+            
+                <%=pokemon[i].pokemon1 %>
+                <%=pokemon[i].pokemon2 %>
+                <%=pokemon[i].pokemon3 %>
+                <%=pokemon[i].pokemon4 %>
+                <%=pokemon[i].pokemon5 %>
+                <%=pokemon[i].pokemon6 %>
+            </li>
+    <% } %> 
+    </ul>
+</div>
+<!-- where the user sees their team -->
+
+
+
+
+
+
+
+

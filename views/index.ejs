@@ -10,46 +10,48 @@
 
 		<!-- external CSS link -->
 		
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="public/css/index.css">
 	</head>
 	<body">
 
+		<nav>
+			<ul><a href="/profile"> Profile</a></ul>
+		</nav>
+
 
 		<h2> Hello <%=user.userName%></h2>
-
+		
+		
 		<h1 class="choose"> Choose your Pokemon</h1>
 			<input  type="text" name="" value="">
 			<button  type="button" name="button"> Get Pokemon</button>
+	  
+			<h2 class="name"> Name:</h2> <h2 id='name'> Name </h2>
+			
+			
+	
+	
+			<h3 class="type"> Type: </h3> <h3  id='type'> Type</h3>
+			<h3 class="attack"> Attack:</h3> <h3  id="attack"> Attack</h3>
+			<h3 class="defense"> Defense: </h3> <h3 id="defense"> Defense</h3>
+			
+		
+		
+		<form action="/pokemon/createTeam" method="POST">
+			
+			<input type="text" name="pokemon1" placeholder="pokemon1">
+			<input type="text" name="pokemon2" placeholder="pokemon2">
+			<input type="text" name="pokemon3" placeholder="pokemon3">
+			<input type="text" name="pokemon4" placeholder="pokemon4">
+			<input type="text" name="pokemon5" placeholder="pokemon5">
+			<input type="text" name="pokemon6" placeholder="pokemon6">
+			<input type="text" name="teamnumber" placeholder="teamnumber">
 
-		<h2 class="name"> Name</h2>
-		<img  src="" alt="">
-	
-	
-		<h3 class="type"> Type: </h3> <h3  id='type'> Type</h3>
-		<h3 class="attack"> Attack:</h3> <h3  id="attack"> Attack</h3>
-		<h3 class="defense"> Defense: </h3> <h3 id="defense"> Defense</h3>
-														
-																		   
-		<h2> Add Pokemon to Team</h2>
-			<form  action="/addTeam1" method="POST">
-				<input id="team1" name="pokemonName" type="text" placeholder="Choose Pokemon">
-				<button name="button1" id="button1"> Team 1 </button> <br>
-			</form>
-														
-			<form  action="/addTeam2" method="POST">
-				<input name="button2" type="text" placeholder="Choose Pokemon">
-				<button name="button2" id="button2"> Team 2 </button> <br>
-			</form>
-														
-			<form  action="/addTeam3" method="POST">
-		  		<input name="button3" type="text" placeholder="Choose Pokemon">
-		  		<button name="button3" id="button3"> Team 3 </button> <br>
-			</form>
-														
-			<form  action="/addTeam4" method="POST">   
-		 		 <input name="button4" type="text" placeholder="Choose Pokemon">
-		  		<button name="button4" id="button4"> Team 4 </button>
-			</form>            
+
+			<button type="submit"> Save Team</button>
+
+		</form>
+	       
 	
 	
 

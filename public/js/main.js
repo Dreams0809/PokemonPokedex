@@ -9,8 +9,7 @@ function getPokemon(){
   .then(res => res.json()) // parse response as JSON
   .then(data => {
     
-        
-    document.querySelector('h2').innerText = data.name.toUpperCase()
+    document.querySelector('#name').innerText = data.name.toUpperCase()    
     document.querySelector('img').src = data.sprites.other["official-artwork"].front_default
     document.querySelector('#type').innerText = data.types[0].type.name.toUpperCase()
     document.querySelector('#attack').innerText = data.stats[1].base_stat
@@ -114,10 +113,5 @@ console.log('Choose your Pokemon')
 
 
 
-const h1title = document.getElementById('title')
-alert(h1title.textContent)
 
-// function changeColor(event) {
-//   const text = document.querySelector('#type').addEventListnertarget.textContent
 
-//   if (text === "water") // do magic

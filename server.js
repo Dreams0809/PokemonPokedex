@@ -55,30 +55,6 @@ app.use(flash())
 app.use('/', homeRoutes)
 app.use('/pokemon', pokemonRoutes)
 
-// app.get('/',async (request, response)=>{
-//     response.render('index.ejs')
-// })
-
-// app.get('/team1', async (request, response)=>{
-//     response.render('team1.ejs')
-// })
-
-// //POST
-// app.post('/addTeam1', async (request, response)=>{
-//     db.collection('team1').insertOne({
-//         Pokemon:request.body.pokemonName,
-//         Attack: request.body.pokemonAttack,
-//         Defense:request.body.pokemonDefense,
-//         Type: request.body.pokemonType})
-//     .then(result => {
-//         console.log('Added to Team 1')
-//         response.redirect('/team1')
-//     })
-// })
-
-
-
-
 
 
 

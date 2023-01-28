@@ -1,11 +1,12 @@
 ﻿const express = require('express')
 const router = express.Router()
+const { ensureAuth, ensureGuest } = require("../middleware/auth");
 const pokemonController = require('../controllers/pokemon')
 
-router.get('/', pokemonController.getPokemon)
+router.get("/:id", ensureAuth, pokemonController.getPost);
 
-router.post('/team1', pokemonController.getTeam1)
+router.post('/createTeam', pokemonController.createTeam)
 
-router.post('/addTeam1', pokemonController.createTeam1)
+
 
 module.exports = router
