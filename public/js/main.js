@@ -26,9 +26,9 @@ function getPokemon(){
       document.querySelector('h1').style.color = 'white'
       document.querySelector('#attack').style.color = 'red'
       document.querySelector('#defense').style.color = 'red'
-      document.querySelector('.type').style.color = 'white'
-      document.querySelector('.attack').style.color = 'white'
-      document.querySelector('.defense').style.color = 'white'
+      document.querySelector('.type').style.color = 'black'
+      document.querySelector('.attack').style.color = 'black'
+      document.querySelector('.defense').style.color = 'black'
       document.querySelector('#type').style.color = 'Red'
       document.querySelector('body').style.backgroundImage = "url('https://c4.wallpaperflare.com/wallpaper/443/960/991/fire-background-flames-wallpaper-preview.jpg')"
       document.querySelector('body').style.backgroundRepeat = 'no-repeat'
@@ -102,9 +102,6 @@ function getPokemon(){
 }
 
 console.log('Choose your Pokemon')
-
-
-
 
 
 
