@@ -19,7 +19,7 @@ function getPokemon(){
       document.querySelector('#type').style.color = 'blue'
       document.querySelector('body').style.backgroundImage = "url('https://media.nationalgeographic.org/assets/photos/380/216/1c9ab248-0c9c-413d-b0c8-ce8aec56b821_c173-0-1826-1308_r800x633.jpg?96ed7f9566b7ff80376a33c65e148cfbde5cf2a3')"
       document.querySelector('body').style.backgroundRepeat = 'no-repeat'
-      document.querySelector('body').style.backgroundSize = 'contain'
+      document.querySelector('body').style.backgroundSize = 'cover'
     }
 
     if(data.types[0].type.name.toUpperCase() === 'FIRE'){
@@ -32,10 +32,11 @@ function getPokemon(){
       document.querySelector('#type').style.color = 'Red'
       document.querySelector('body').style.backgroundImage = "url('https://c4.wallpaperflare.com/wallpaper/443/960/991/fire-background-flames-wallpaper-preview.jpg')"
       document.querySelector('body').style.backgroundRepeat = 'no-repeat'
-      document.querySelector('body').style.backgroundSize = 'contain'
+      document.querySelector('body').style.backgroundSize = 'cover'
     }
     
     if(data.types[0].type.name.toUpperCase() === 'GRASS'){
+      document.querySelector('#username').style.color = "green"
       document.querySelector('#type').style.color = '#004953'
       document.querySelector('#attack').style.color = '#004953'
       document.querySelector('#defense').style.color = '#ADFF2F'
@@ -43,7 +44,7 @@ function getPokemon(){
       document.querySelector('h1').style.color = 'green'
       document.querySelector('body').style.backgroundImage = "url('https://wallpapercave.com/dwp1x/MTFGvNm.jpg')"
       document.querySelector('body').style.backgroundRepeat = 'no-repeat'
-      document.querySelector('body').style.backgroundSize = 'contain'
+      document.querySelector('body').style.backgroundSize = 'cover'
     }
     
     if(data.types[0].type.name.toUpperCase() === 'ELECTRIC'){
@@ -57,7 +58,7 @@ function getPokemon(){
       document.querySelector('.defense').style.color = '#999900'
       document.querySelector('body').style.backgroundImage = "url('https://www.gettyimages.in/detail/video/4k-gold-yellow-square-blurred-abstract-concert-stock-footage/1232893618')"
       document.querySelector('body').style.backgroundRepeat = 'no-repeat'
-      document.querySelector('body').style.backgroundSize = 'contain'
+      document.querySelector('body').style.backgroundSize = 'cover'
     }
     
     if(data.types[0].type.name.toUpperCase() === 'GHOST'){
@@ -71,7 +72,7 @@ function getPokemon(){
       document.querySelector('.name').style.color = 'Grey'
       document.querySelector('body').style.backgroundImage = "url('https://wallpaperset.com/w/full/e/1/1/54167.jpg')"
       document.querySelector('body').style.backgroundRepeat = 'no-repeat'
-      document.querySelector('body').style.backgroundSize = 'contain'
+      document.querySelector('body').style.backgroundSize = 'cover'
     }
     
     if(data.types[0].type.name.toUpperCase() === 'ICE'){
@@ -85,7 +86,7 @@ function getPokemon(){
       document.querySelector('.name').style.color = '#aad4e5'
       document.querySelector('body').style.backgroundImage = "url('https://i.pinimg.com/originals/31/b7/fa/31b7fa3e136fc9d116597d4b21154854.jpg')"
       document.querySelector('body').style.backgroundRepeat = 'no-repeat'
-      document.querySelector('body').style.backgroundSize = 'contain'
+      document.querySelector('body').style.backgroundSize = 'cover'
     }
 
   

@@ -1,0 +1,22 @@
+﻿*{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-image:url("http://satoshipedia.altervista.org/wp-content/uploads/2016/04/Masara-Town.png");
+    background-size: cover;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 600px;
+    justify-content: space-evenly;
+}
+

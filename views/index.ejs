@@ -4,8 +4,9 @@
     	<meta charset="utf-8">
     	<meta name="description" content="Your description goes here">
     	<meta name="keywords" content="one, two, three">
-
-				
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">		
 		<title>Pokemon Pokedex</title>
 
 		<!-- external CSS link -->
@@ -19,7 +20,7 @@
 		</nav>
 
 
-		<h2> Hello <%=user.userName%></h2>
+		<h2 id="username"> Hello <%=user.userName%></h2>
 		
 		
 		<h1 class="choose"> Choose your Pokemon</h1>
@@ -37,6 +38,7 @@
 			<h3 class="defense"> Defense: </h3> <h3 id="defense"> Defense</h3>
 			
 		
+		<h1> ADD POKEMON TO YOUR TEAM !</h1>
 		
 		<form action="/pokemon/createTeam" method="POST">
 			
