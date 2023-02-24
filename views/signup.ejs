@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/signup.css">
+    <title>SIGNUP</title>
 </head>
 <body>
     <% if (locals.messages.errors) { %>
@@ -12,12 +16,24 @@
             <div class="alert alert-danger"><%= el.msg %></div>
         <% }) %>    
     <% } %>
+    
+    
+    
     <form action="/signup" method="POST">
-        <input type="text" name="userName" placeholder="User Name">
-        <input type="email" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="Password">
-        <input type="password" name="confirmPassword" placeholder="Confirm Password">
-        <input type="submit">
+        <div>
+            <h2> SIGNUP</h2>
+            <h3> Email:</h3>
+                <input type="email" name="email" placeholder="Email">
+            <h3> Password:</h3>
+                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="confirmPassword" placeholder="Confirm Password">
+            <input type="submit">
+                <button type="button">SIGNUP</button>
+
+        </div>
     </form>
+
+
+    <script type="text/javascript" src="public/js/signup.js">  </script>
 </body>
 </html>

@@ -20,6 +20,13 @@ function getPokemon(){
       document.querySelector('body').style.backgroundImage = "url('https://media.nationalgeographic.org/assets/photos/380/216/1c9ab248-0c9c-413d-b0c8-ce8aec56b821_c173-0-1826-1308_r800x633.jpg?96ed7f9566b7ff80376a33c65e148cfbde5cf2a3')"
       document.querySelector('body').style.backgroundRepeat = 'no-repeat'
       document.querySelector('body').style.backgroundSize = 'cover'
+      document.querySelector('h1').style.color = '#6464ff'
+      document.querySelector('#attack').style.color = '#6464ff'
+      document.querySelector('#defense').style.color = '#6464ff'
+      document.querySelector('.type').style.color = '#6464ff'
+      document.querySelector('.attack').style.color = '#6464ff'
+      document.querySelector('.defense').style.color = '#6464ff'
+      document.querySelector('#type').style.color = '#6464ff'
     }
 
     if(data.types[0].type.name.toUpperCase() === 'FIRE'){

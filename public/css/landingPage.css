@@ -16,7 +16,11 @@ body{
 .container{
     display: flex;
     justify-content: center;
-    padding-top: 600px;
+    padding-top: 500px;
     justify-content: space-evenly;
 }
 
+
+section{
+    padding-top: 100px;
+}
