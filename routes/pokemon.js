@@ -7,6 +7,8 @@ router.get("/:id", ensureAuth, pokemonController.getPost);
 
 router.post('/createTeam', pokemonController.createTeam)
 
+router.delete("/deleteTeam", pokemonController.deleteTeam)
+
 
 
 module.exports = router

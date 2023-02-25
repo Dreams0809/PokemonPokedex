@@ -14,26 +14,6 @@ module.exports = {
     },
 
 
-    getFeed: async(request, response)=>{
-        try{
-            // const user = await Pokemon.find({user: request.user.id})
-            const pokemons = await Pokemon.find().sort({createdAt: "desc"}).lean();
-            response.render("feed.ejs", {pokemons: pokemons, user: request.user})
-        }catch (err){
-            console.log(err);
-        }
-    },
-
-    getPost: async (require,response) =>{
-        try{
-            const pokemon = await Pokemon.findById(request.params.id);
-            response.render("pokemon.ejs", {pokemon: pokemon, user: request.user})
-        }catch (err){
-            console.log(err);
-        }
-    },
-    
-
     createTeam: async(request,response) =>{
         try{
             
@@ -64,6 +44,17 @@ module.exports = {
             console.log(err)
         }
     },
+
+    // deleteTeam: async(request, response) =>{
+    //     try{
+    //         let pokemon = await Pokemon.findById({_id: userId});
+    //         await Pokemon.remove({_id: request.params.id});
+    //         console.log("Team Deleted");
+    //         response.redirect("/profile");
+    //     } catch(err){
+    //         response.redirect("/profile")
+    //     }
+    // }
 
    
 
