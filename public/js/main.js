@@ -55,9 +55,9 @@ function getPokemon(){
     }
     
     if(data.types[0].type.name.toUpperCase() === 'ELECTRIC'){
-      document.querySelector('#type').style.color = 'Yellow'
-      document.querySelector('#attack').style.color = 'Yellow'
-      document.querySelector('#defense').style.color = 'Yellow' 
+      document.querySelector('#type').style.color = 'black'
+      document.querySelector('#attack').style.color = 'black'
+      document.querySelector('#defense').style.color = 'black' 
       document.querySelector('h1').style.color = '#f5c71a'
       document.querySelector('.name').style.color = '#f5c71a'
       document.querySelector('.type').style.color = '#999900'

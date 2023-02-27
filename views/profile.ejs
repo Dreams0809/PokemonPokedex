@@ -25,10 +25,10 @@
   </div>
 </div>
 
-<h1> Welcome <%= user.userName %> <h1>
+<h1 class="title"> Welcome <%= user.userName %> <h1>
 
 
-<h1> My Pokemon Team </h1>
+<h1> My Pokemon Team: </h1>
 
 <div class="list">
     <ul class="list">
@@ -62,12 +62,13 @@
                 
               
             </li>
-            <h3> Delete Button:</h3>
-            <form action="/pokemon/deleteTeam_method=DELeTE" method="POST">
-                <button class="btn btn-primary fa fa-trash" type="submit"></button>
-            </form>
+         
     <% } %> 
     </ul>
+    <h3> Delete Button:</h3>
+    <form action="/pokemon/deleteTeam_method=DELeTE" method="POST">
+        <button class="btn btn-primary fa fa-trash" type="submit"></button>
+    </form>
 </div>
 <!-- where the user sees their team -->
 

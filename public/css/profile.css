@@ -52,3 +52,8 @@ li{
      
 }
 
+.title{
+     display: flex;
+     justify-content: center ;
+}
+
