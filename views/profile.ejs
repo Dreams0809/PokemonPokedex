@@ -56,18 +56,20 @@
                     <div>
                         <%=pokemon[i].pokemon6 %>
                     </div> -->
-                    <%=pokemon[i].createdAt %>
+                    <span><%=pokemon[i].createdAt %> </span>
+                    <h3> Delete Button:</h3>
+                    <form action="/pokemon/deleteTeam/<%= pokemon[i]._id%>?_method=DELETE" method="POST">
+                        <button class="btn btn-primary fa fa-trash" type="submit"></button>
+                    </form> 
                 </div>
-                
-              
             </li>
          
-    <% } %> 
+        <% } %> 
     </ul>
-    <h3> Delete Button:</h3>
-    <form action="/pokemon/deleteTeam/<%= pokemon._id%>?_method=DELETE" method="POST">
+    <!-- <h3> Delete Button:</h3>
+    <form action="/pokemon/deleteTeam/?_method=DELETE" method="POST">
         <button class="btn btn-primary fa fa-trash" type="submit"></button>
-    </form>
+    </form> -->
 </div>
 <!-- where the user sees their team -->
 
