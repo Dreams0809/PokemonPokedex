@@ -48,7 +48,7 @@ module.exports = {
     deleteTeam: async(request, response) =>{
         try{
             let pokemon = await Pokemon.findOne({ _id: request.params.id});
-            await Pokemon.remove({ _id: request.params.id});
+            await Pokemon.deleteOne({ _id: request.params.id});
             console.log("Team Deleted");
             response.redirect("/profile");
         } catch(err){
