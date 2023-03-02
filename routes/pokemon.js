@@ -7,7 +7,7 @@ const pokemonController = require('../controllers/pokemon')
 
 router.post('/createTeam', pokemonController.createTeam)
 
-router.delete('/deleteTeam', pokemonController.deleteTeam)
+router.delete('/deleteTeam/:id', pokemonController.deleteTeam)
 
 
 

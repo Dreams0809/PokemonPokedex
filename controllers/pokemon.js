@@ -21,21 +21,21 @@ module.exports = {
             await Pokemon.create({
                 userId: request.user._id,
         
-                pokemon1: request.body.pokemon1,
+                 pokemon: request.body.pokemon,
        
-                pokemon2:request.body.pokemon2,
+                //  pokemon2:request.body.pokemon2,
      
-                pokemon3: request.body.pokemon3,
+                //  pokemon3: request.body.pokemon3,
         
-                pokemon4: request.body.pokemon4,
+                //  pokemon4: request.body.pokemon4,
           
-                pokemon5:request.body.pokemon5,
+                //  pokemon5:request.body.pokemon5,
             
-                pokemon6: request.body.pokemon6,
+                //  pokemon6: request.body.pokemon6,
                 
-                createdAt: Date.now(),
+                 createdAt: Date.now(),
                
-                teamNumber: request.body.teamNumber,
+                 teamNumber: request.body.teamNumber,
       
             });
             console.log("Pokemon added !")

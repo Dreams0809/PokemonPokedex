@@ -65,7 +65,7 @@
     <% } %> 
     </ul>
     <h3> Delete Button:</h3>
-    <form action="/pokemon/deleteTeam/?_method=DELETE" method="POST">
+    <form action="/pokemon/deleteTeam/<%= pokemon._id%>?_method=DELETE" method="POST">
         <button class="btn btn-primary fa fa-trash" type="submit"></button>
     </form>
 </div>
