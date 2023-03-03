@@ -5,6 +5,13 @@
      font: 300;
 }
 
+body{
+     background-image: url("https://th.bing.com/th/id/R.fc2856c591aa9e49025c3a6012306a74?rik=m7baHiWBYJTHNQ&riu=http%3a%2f%2fpre00.deviantart.net%2f7c71%2fth%2fpre%2ff%2f2016%2f085%2f1%2fc%2f720x1280_pokedex_phone_wallpaper_by_rhlpixels-d9wlus2.png&ehk=ZDq0W8SNgnNX1qEeNhGCP%2biqQ2RMEol45IewUVyN4wU%3d&risl=&pid=ImgRaw&r=0");
+     background-size:  auto;
+     /* background-repeat: no-repeat; */
+     
+}
+
 /* Clear fix hack */
 .clearfix:after {
      content: ".";
