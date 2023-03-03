@@ -2,6 +2,20 @@
 * {
     box-sizing: border-box;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: 	rgb(128,0,0);
+}
+
+body{
+    background-image: url("https://preview.redd.it/o8a7u5vl6hb41.png?auto=webp&s=96532f959833339937e105d6358746602c0ab467");
+    background-size:  auto;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-right: 60px;
+   
+    
 }
 
 /* Clear fix hack */
@@ -50,3 +64,22 @@ ul{
 .pokemonTeam{
     font-size: 23px;
 }
+
+nav{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding-right: 80px;
+    color: white;
+}
+
+li{
+    color: white;
+}
+
+#username{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+}
+
