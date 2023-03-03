@@ -1,63 +1,69 @@
-﻿<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="public/css/profile.css">
-
-
-
-
-<nav>
-    <ul><a href="/home"> Home</a></ul>
-
-</nav>
-
-
-<div class="container">
-  <div class="row mt-5">
-      <div class="col-6">
-          <div>
-              <p><strong>User Name</strong>: <%= user.userName %></p>
-              <p><strong>Email</strong>: <%= user.email %></p>
-              <a href="/logout" class="col-3 btn btn-primary">Logout</a>
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="public/css/profile.css">
+        
+        <title>Profile</title>
+    </head>
+    
+    
+    
+    <body>
+        <nav>
+            <ul><a href="/home"> Home</a></ul>
+        
+        </nav>
+        
+        
+        <div class="container">
+          <div class="row mt-5">
+              <div class="col-6">
+                  <div>
+                      <p><strong>User Name</strong>: <%= user.userName %></p>
+                      <p><strong>Email</strong>: <%= user.email %></p>
+                      <a href="/logout" class="col-3 btn btn-primary">Logout</a>
+                  </div>
+              </div>
           </div>
-      </div>
-  </div>
-</div>
-
-<h1 class="title"> Welcome <%= user.userName %> <h1>
-
-
-<h1> My Pokemon Team: </h1>
-
-<div class="list">
-    <ul class="list">
-        <% for (let i = 0; i < pokemon.length; i++){ %>
-            <li class="list">
-                <div>
-                    <div>
-                        Team Name: <%=pokemon[i].teamName %>
-                    </div>
-                    <div>
-                       <p class="pokemonlist"> <%=pokemon[i].pokemonTeam %> <p>
-                    </div>    
+        </div>
+        
+        <h1 class="title"> Welcome <%= user.userName %> <h1>
+        
+        
+        <h1> My Pokemon Team: </h1>
+        
+        <div class="list">
+            <ul class="list">
+                <% for (let i = 0; i < pokemon.length; i++){ %>
+                    <li class="list">
+                        <div>
+                            <div id="name">
+                                Team Name: <%=pokemon[i].teamName %>
+                            </div>
+                            <div>
+                               <p class="pokemonTeam"> <%=pokemon[i].pokemonTeam %> <p>
+                            </div>    
+                         
+                            <span><%=pokemon[i].createdAt %> </span>
+                            
+                            <h3> Delete Button:</h3>
+                            <form action="/pokemon/deleteTeam/<%= pokemon[i]._id%>?_method=DELETE" method="POST">
+                                <button class="btn btn-primary fa fa-trash" type="submit"></button>
+                            </form> 
+                        </div>
+                    </li>
                  
-                    <span><%=pokemon[i].createdAt %> </span>
-                    <h3> Delete Button:</h3>
-                    <form action="/pokemon/deleteTeam/<%= pokemon[i]._id%>?_method=DELETE" method="POST">
-                        <button class="btn btn-primary fa fa-trash" type="submit"></button>
-                    </form> 
-                </div>
-            </li>
-         
-        <% } %> 
-    </ul>
-</div>
-
-
-
-
-
+                <% } %> 
+            </ul>
+        </div> 
+    </body>
+</html>
 
 
 

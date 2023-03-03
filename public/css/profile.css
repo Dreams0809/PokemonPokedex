@@ -61,3 +61,13 @@
      list-style: none;
 }
 
+
+.pokemonTeam{
+     font-size: 32px;
+     display: flex;
+     flex-direction: column;
+}
+
+#name{
+     font-size: 20px;
+}
