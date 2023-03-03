@@ -5,30 +5,14 @@ const TeamSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    
-    pokemon:{
+
+    teamName:{
+        type: String,
+    },
+
+    pokemonTeam:{
         type: [String]
     },
-    // pokemon2:{
-    //     type: [String]
-    // },
-
-    // pokemon3:{
-    //     type: [String]
-    // },
-
-    // pokemon4:{
-    //     type: [String]
-    // },
-
-    // pokemon5:{
-    //     type: [String]
-    // },
-
-    // pokemon6:{
-    //     type: [String]
-    // },
-
 
     createdAt:{
         type: Date,
@@ -36,11 +20,7 @@ const TeamSchema = new mongoose.Schema({
     },
 
 
-
-
-
-
 });
 
 
-module.exports = mongoose.model('Pokemon', TeamSchema)
+module.exports = mongoose.model('PokemonTeam', TeamSchema)

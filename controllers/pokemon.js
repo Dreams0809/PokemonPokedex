@@ -19,24 +19,12 @@ module.exports = {
             
             console.log(request.user)
             await Pokemon.create({
-                userId: request.user._id,
-        
-                 pokemon: request.body.pokemon,
-       
-                //  pokemon2:request.body.pokemon2,
-     
-                //  pokemon3: request.body.pokemon3,
-        
-                //  pokemon4: request.body.pokemon4,
-          
-                //  pokemon5:request.body.pokemon5,
-            
-                //  pokemon6: request.body.pokemon6,
                 
-                 createdAt: Date.now(),
-               
-                 teamNumber: request.body.teamNumber,
-      
+                userId: request.user._id,
+
+                teamName: request.body.teamName,
+        
+                pokemonTeam: request.body.pokemonTeam,
             });
             console.log("Pokemon added !")
             response.redirect('/profile')

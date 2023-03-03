@@ -36,26 +36,12 @@
             <li class="list">
                 <div>
                     <div>
-                        Team Number <%=pokemon[i].teamNumber %>
+                        Team Name: <%=pokemon[i].teamName %>
                     </div>
                     <div>
-                        <%=pokemon[i].pokemon %>
+                       <p class="pokemonlist"> <%=pokemon[i].pokemonTeam %> <p>
                     </div>    
-                    <!-- <div> 
-                        <%=pokemon[i].pokemon2 %>
-                    </div>
-                    <div>
-                        <%=pokemon[i].pokemon3 %>
-                    </div>
-                    <div>
-                        <%=pokemon[i].pokemon4 %>
-                    </div>
-                    <div>
-                        <%=pokemon[i].pokemon5 %>
-                    </div>
-                    <div>
-                        <%=pokemon[i].pokemon6 %>
-                    </div> -->
+                 
                     <span><%=pokemon[i].createdAt %> </span>
                     <h3> Delete Button:</h3>
                     <form action="/pokemon/deleteTeam/<%= pokemon[i]._id%>?_method=DELETE" method="POST">
@@ -66,12 +52,8 @@
          
         <% } %> 
     </ul>
-    <!-- <h3> Delete Button:</h3>
-    <form action="/pokemon/deleteTeam/?_method=DELETE" method="POST">
-        <button class="btn btn-primary fa fa-trash" type="submit"></button>
-    </form> -->
 </div>
-<!-- where the user sees their team -->
+
 
 
 

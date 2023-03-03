@@ -44,7 +44,7 @@
 /*******************************************/
 
 
-li{
+.pokemonlist{
      list-style: none;
      display: flex;
      flex-direction: column;
@@ -55,5 +55,9 @@ li{
 .title{
      display: flex;
      justify-content: center ;
+}
+
+.list{
+     list-style: none;
 }
 
