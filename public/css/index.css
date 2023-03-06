@@ -1,5 +1,10 @@
 ﻿/* Box Model Hack */
-* {
+
+li{
+    color: white;
+}
+
+*{
     box-sizing: border-box;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: 	rgb(22, 29, 50);
@@ -72,11 +77,10 @@ nav{
     justify-content: center;
     padding-right: 80px;
     color: white;
+    flex-direction: row;
 }
 
-li{
-    color: white;
-}
+
 
 #username{
     display: flex;
@@ -84,3 +88,7 @@ li{
     font-size: 32px;
 }
 
+#logout{
+    display: flex;
+    justify-content: center;
+}

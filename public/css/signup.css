@@ -4,7 +4,7 @@
 
 
 body{
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/927/247/737/pokemon-nature-pikachu-charmander-wallpaper-preview.jpg");
+    background-image: url("https://media.pokemoncentral.it/wiki/thumb/a/a6/Cartolina_spiaggia.jpg/600px-Cartolina_spiaggia.jpg");
     background-position: center;
     background-size: cover;
     height: 95vh;
@@ -16,7 +16,7 @@ body{
     
 .login-box{
     width: 320px;
-    height: 390px;
+    height: 500px;
     background: radial-gradient(rgba(255,255,255,0.6));
     box-shadow: 5px 10px 20px rgba(0,0,0,0.6);
     backdrop-filter: blur(3px);
@@ -97,4 +97,5 @@ button:hover{
     color: #000;
     background: #fff;
 }
+
 

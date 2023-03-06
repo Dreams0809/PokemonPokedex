@@ -16,6 +16,9 @@ function getPokemon(){
     document.querySelector('#defense').innerText = data.stats[2].base_stat
     
     if(data.types[0].type.name.toUpperCase() === 'WATER'){
+      document.querySelector('h1').style.color = '#6464ff'
+      document.querySelector('#username').style.color = '#6464ff'
+      document.querySelector('#name').style.color = '#6464ff'
       document.querySelector('#type').style.color = 'blue'
       document.querySelector('body').style.backgroundImage = "url('https://media.nationalgeographic.org/assets/photos/380/216/1c9ab248-0c9c-413d-b0c8-ce8aec56b821_c173-0-1826-1308_r800x633.jpg?96ed7f9566b7ff80376a33c65e148cfbde5cf2a3')"
       document.querySelector('body').style.backgroundRepeat = 'no-repeat'
@@ -30,6 +33,9 @@ function getPokemon(){
     }
 
     if(data.types[0].type.name.toUpperCase() === 'FIRE'){
+      document.querySelector('h1').style.color = 'red'
+      document.querySelector('#username').style.color = 'red'
+      document.querySelector('#name').style.color = 'red'
       document.querySelector('h1').style.color = 'white'
       document.querySelector('#attack').style.color = 'red'
       document.querySelector('#defense').style.color = 'red'
@@ -43,10 +49,12 @@ function getPokemon(){
     }
     
     if(data.types[0].type.name.toUpperCase() === 'GRASS'){
-      document.querySelector('#username').style.color = "green"
+      document.querySelector('h1').style.color = 'green'
+      document.querySelector('#username').style.color = 'green'
+      document.querySelector('#name').style.color = 'green'
       document.querySelector('#type').style.color = '#004953'
       document.querySelector('#attack').style.color = '#004953'
-      document.querySelector('#defense').style.color = '#ADFF2F'
+      document.querySelector('#defense').style.color = '#004953'
       document.querySelector('.name').style.color = 'green'
       document.querySelector('h1').style.color = 'green'
       document.querySelector('body').style.backgroundImage = "url('https://wallpapercave.com/dwp1x/MTFGvNm.jpg')"
@@ -70,6 +78,8 @@ function getPokemon(){
     
     if(data.types[0].type.name.toUpperCase() === 'GHOST'){
       document.querySelector('h1').style.color = 'Grey'
+      document.querySelector('#username').style.color = 'Grey'
+      document.querySelector('#name').style.color = 'Grey'
       document.querySelector('#type').style.color = 'Grey'
       document.querySelector('#attack').style.color = 'Grey'
       document.querySelector('#defense').style.color = 'Grey'
@@ -83,14 +93,17 @@ function getPokemon(){
     }
     
     if(data.types[0].type.name.toUpperCase() === 'ICE'){
-      document.querySelector('#type').style.color = '#aad4e5'
-      document.querySelector('#attack').style.color = '#aad4e5'
-      document.querySelector('#defense').style.color = '#aad4e5'
-      document.querySelector('.type').style.color = '#aad4e5'
-      document.querySelector('.attack').style.color = '#aad4e5'
-      document.querySelector('.defense').style.color = '#aad4e5'
-      document.querySelector('h1').style.color = '#aad4e5'
-      document.querySelector('.name').style.color = '#aad4e5'
+      document.querySelector('h1').style.color = '#9ea9ff'
+      document.querySelector('#username').style.color = '#9ea9ff'
+      document.querySelector('#name').style.color = '#9ea9ff'
+      document.querySelector('#type').style.color = '#9ea9ff'
+      document.querySelector('#attack').style.color = '#9ea9ff'
+      document.querySelector('#defense').style.color = '#9ea9ff'
+      document.querySelector('.type').style.color = '#9ea9ff'
+      document.querySelector('.attack').style.color = '#9ea9ff'
+      document.querySelector('.defense').style.color = '#9ea9ff'
+      document.querySelector('h1').style.color = '#9ea9ff'
+      document.querySelector('.name').style.color = '#9ea9ff'
       document.querySelector('body').style.backgroundImage = "url('https://i.pinimg.com/originals/31/b7/fa/31b7fa3e136fc9d116597d4b21154854.jpg')"
       document.querySelector('body').style.backgroundRepeat = 'no-repeat'
       document.querySelector('body').style.backgroundSize = 'cover'
