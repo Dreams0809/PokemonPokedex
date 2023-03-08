@@ -49,7 +49,7 @@ const User = require('../Models/User')
   
   exports.getSignup = (req, res) => {
     if (req.user) {
-      return res.redirect('/home')
+      return res.redirect('/')
     }
     res.render('signup', {
       title: 'Create Account'
@@ -89,7 +89,7 @@ const User = require('../Models/User')
           if (err) {
             return next(err)
           }
-          res.redirect('/home')
+          res.redirect('/')
         })
       })
     })
