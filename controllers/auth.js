@@ -1,4 +1,4 @@
-﻿﻿const passport = require('passport')
+﻿const passport = require('passport')
 const validator = require('validator')
 const User = require('../Models/User')
 
@@ -37,7 +37,7 @@ const User = require('../Models/User')
   }
   
   exports.logout = (req, res) => {
-    req.logout(() => {
+  req.logout(() => {
       console.log('User has logged out.')
     })
     req.session.destroy((err) => {
